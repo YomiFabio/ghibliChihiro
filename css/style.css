@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+@keyframes ghost-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
 @media only screen and (max-width:768px){
     .col-xs-1 {width: 8.33%;}
     .col-xs-2 {width: 16.66%;}
@@ -73,9 +86,7 @@ header{
 
 .container{
     background: linear-gradient(130deg,#628E75 0%, #1A4855 100%);
-        background-repeat: no-repeat;
-        background-size: cover;
-
+        
 }
 .corpo{
     display: flex;
@@ -122,6 +133,10 @@ header{
     height: 375px;
 }
 
+.ghost:hover{
+    animation: ghost-animation 4s infinite;
+}
+
 .button{
     max-width: 450px;
     width: 100%;
@@ -158,7 +173,7 @@ header{
     background: #658E76;
 }
 
-.film:hover{
+.film{
     transition: .3s ease;
     background: #53b67c;
     outline: none;
