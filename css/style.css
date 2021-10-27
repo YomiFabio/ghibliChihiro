@@ -31,6 +31,9 @@
     .col-xs-11{width: 91.66%;}
     .col-xs-12 {width: 100%;}
 
+    body{
+        width: 100%;
+    }
     .container{
         background: linear-gradient(130deg,#628E75 0%, #1A4855 100%);
         background-repeat: no-repeat;
@@ -38,6 +41,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .corpo{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .main-col-xs{
@@ -49,24 +58,21 @@
         width: 100%;
         height: 222px;
     }
-
-    body{
-        font-family: 'Poppins', sans-serif;
-        
-        height:736px
-    }
     .trailer{
         display: none;
         visibility: hidden;
     }
 }
-
+html {
+    display: block;
+}
 body{
     font-family: 'Poppins', sans-serif;
-    /*background: linear-gradient(130deg,#628E75 0%, #1A4855 100%);*/
-    background-repeat: no-repeat;
-    height: 762px;
+    background: linear-gradient(130deg,#628E75 0%, #1A4855 100%)no-repeat;
+    background-size: 100% 200%;
+
 }
+
 header{
     position: relative;
     width: 100%;
@@ -84,16 +90,11 @@ header{
     height: 20px;
 }
 
-.container{
-    background: linear-gradient(130deg,#628E75 0%, #1A4855 100%);
-        
-}
 .corpo{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 80%;
-    height: 762px;
 }
 
 .main{
@@ -173,7 +174,7 @@ header{
     background: #658E76;
 }
 
-.film{
+.film:hover{
     transition: .3s ease;
     background: #53b67c;
     outline: none;
